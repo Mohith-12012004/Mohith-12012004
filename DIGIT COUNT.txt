@@ -1,0 +1,16 @@
+//DIGIT COUNT
+
+public class Digitcount   //Creating a class with Digitcount
+{  
+	public static void main(String[] args)  //Main function 
+	{  
+		int n=1234; //Declaring a datatype int n as a variable=1234
+		int count=0; //Initializing count=0
+		while(n>0) //Giving a while loop for iteration it moves into the loop when n>0
+		{
+			n=n/10; //If while condition(n>0) it will move inside the loop and n is divided with 10 
+			count++; //It will increasing count value simultaneously until the while loop is false
+		}
+		System.out.println("The digit count is:"+ count); //printing the output
+	}  
+}

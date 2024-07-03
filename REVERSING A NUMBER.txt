@@ -1,0 +1,16 @@
+//REVERSING A NUMBER
+
+public class ReverseNumber //Creating a class name Reversenumber   
+{  
+	public static void main(String[] args) //Main function
+	{  
+		int number = 987654, reverse = 0; //Declaring the number = 987654,reverse = 0
+		while(number != 0) //Giving a while  loop for iteration if number is not equal to zero  
+		{  
+			int remainder = number % 10; //Getting the remainder  
+			reverse = reverse * 10 + remainder; //reverse * 10 moves to next digit + remainder adfds in that digit.  
+			number = number/10; //To move the next digit.  
+		}  
+		System.out.println("The reverse of the given number is: " + reverse);//Printing the output 
+	}  
+}

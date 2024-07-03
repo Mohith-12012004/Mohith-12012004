@@ -1,0 +1,22 @@
+//SUM OF DIGITS
+
+import java.util.Scanner; //importing the scanner class for getting the user input.
+public class SumOfDigits //creating a class name SumOfDigits
+{  
+	public static void main(String args[])  //Main function
+	{  
+		int number, digit, sum = 0;  //Intializing a variable number,digit,sum=0
+		Scanner sc = new Scanner(System.in); //creating an object for getting scanner class. 
+		System.out.print("Enter the number: ");  
+		number = sc.nextInt();  //It will check whether the given number is integer or not.
+		
+		while(number > 0) //Giving a while loop for iteration if it is (number > 0)
+		{  
+			digit = number % 10; //Getting the remainder
+			sum = sum + digit;  //Getting the sum + remainder
+			number = number / 10; //To move the next digit  
+		}  
+	
+	System.out.println("Sum of Digits: "+sum); //Printing the output.
+	}  
+}  
